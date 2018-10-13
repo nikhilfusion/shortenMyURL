@@ -4,9 +4,9 @@
   "description": "Application to shorten any url",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "server": "nodemon index.js --ignore tests",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd client && npm run start",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "dependencies": {
     "body-parser": "^1.17.2",
