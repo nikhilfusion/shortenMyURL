@@ -2,11 +2,9 @@
 Shorten My URL</h1>
 
 <h4 align="center">Creating custom URL shortener With Nodejs</h4>
-<div align="center">
-  <sub>Built with ❤︎ </sub>
-</div>
 
 </br>
+
 Building a custom URL shortening service using ExpressJs and Mongodb
 
 ## Getting Started
