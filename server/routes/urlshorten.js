@@ -9,8 +9,6 @@ module.exports = app => {
     const item = await UrlShorten.findOne({ urlCode: urlCode });
     if (item) {
       return res.redirect(item.originalUrl);
-    } else {
-      return res.redirect(constants.errorUrl);
     }
   });
 

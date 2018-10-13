@@ -13,6 +13,7 @@
     "express": "^4.15.3",
     "mongoose": "^4.11.1",
     "nodemon": "^1.11.0",
+    "path": "^0.12.7",
     "path-parser": "^2.0.2",
     "shortid": "^2.2.8",
     "uuid": "^3.2.1",
