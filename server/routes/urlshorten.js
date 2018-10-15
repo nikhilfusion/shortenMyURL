@@ -14,8 +14,7 @@ module.exports = app => {
 
   app.post("/api/item", async (req, res) => {
     const { shortBaseUrl, originalUrl } = req.body;
-    if (validUrl.isUri(shortBaseUrl)) {
-    } else {
+    if (!validUrl.isUri(shortBaseUrl)) {
       return res.status(404).json("Invalid Base Url format");
     }
     const urlCode = shortCode.generate();
